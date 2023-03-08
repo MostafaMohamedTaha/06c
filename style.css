@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Karla&family=Pacifico&family=Roboto:wght@300&display=swap');
+
+body {
+    font-size: 2rem;
+    font-family: "Climate", "Crisis";
+    background-color: #333;
+    color: rgb(45, 36, 24);
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: wheat;
+    /* width: 60% */
+}
+
+/* p {
+    background-color: aquamarine;
+    margin: 3rem 4rem;
+
+} */
+
+strong {
+    background-color: chocolate;
+    padding: 4rem;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.block {
+    width: 20vw;
+    height: 20vw;
+    background-color: rgb(147, 97, 31);
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.right {
+    float: right;
+    margin-left: 1rem;
+}
+
+/* .clear {
+    clear: both;
+} */
+.s {
+    background-color: antiquewhite;
+    border: 3px solid wheat;
+    padding: 1rem;
+    display: flow-root
+}
+
+.col {
+    columns: 5 3rem;
+    column-rule: 3px solid rgb(66, 53, 29);
+    /* break-inside: avoid; */
+}
+
+.quote {
+    column-span: all;
+    /* white-space: nowrap; */
+}
+
+.outer-container {
+    border: 3px solid rgb(52, 36, 7);
+    width: 75vw;
+    width: 75vh;
+    margin: 40px auto;
+
+}
+
+.inner-container {
+    border: 3px solid rgb(68, 56, 34);
+    width: 40vw;
+    width: 50vh;
+    margin: 200px auto;
+    position: relative;
+}
+
+.box {
+    width: 60px;
+    height: 50px;
+    color: rgb(54, 91, 91);
+    padding: 1rem;
+    background-color: cadetblue;
+    flex-grow: 2;
+    flex-basis: 50px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: red;
+    color: #000;
+    top: 4rem;
+    left: 1rem;
+}
+
+.sticky {
+    position: sticky;
+    background-color: brown;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed p {
+    position: fixed;
+    color: aquamarine;
+    background-color: blue;
+    text-align: center;
+    top: 1px;
+
+
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 60vw;
+    height: 20vw;
+    display: flex;
+    border: 3px solid #000;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container1 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr 2fr);
+    /* grid-template-rows: repeat(3,1fr 2fr); */
+}
+
+.box1 {
+    background-color: aquamarine;
+    color: rgb(108, 93, 73);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.box1:first-child {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+}
+
+.box1:nth-child(2) {
+    grid-column: 2/5;
+    grid-row: 3/6;
+    display: grid;
+}
